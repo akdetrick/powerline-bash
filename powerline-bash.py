@@ -9,8 +9,8 @@ import re
 class Powerline:
     symbols = {
         'compatible': {
-            'separator': u'\u25B6',
-            'separator_thin': u'\u276F'
+            'separator': '',
+            'separator_thin': ''
         },
         'patched': {
             'separator': u'\u2B80',
@@ -62,7 +62,8 @@ class Segment:
             self.content,
             separator_bg,
             self.powerline.fgcolor(self.separator_fg),
-            self.separator))
+            self.separator,
+            '  ' ))
 
 def add_cwd_segment(powerline, cwd, maxdepth):
     #powerline.append(' \\w ', 15, 237)
@@ -223,7 +224,7 @@ def add_root_indicator(powerline, error):
     powerline.append(Segment(powerline, ' \\$ ', fg, bg))
 
 if __name__ == '__main__':
-    p = Powerline(mode='patched')
+    p = Powerline(mode='compatible')
     cwd = os.getcwd()
     add_virtual_env_segment(p, cwd)
     #p.append(Segment(powerline, ' \\u ', 250, 240))
