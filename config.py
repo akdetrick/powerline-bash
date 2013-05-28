@@ -8,13 +8,13 @@
 
 SEGMENTS = [
 # Show current virtual environment (see http://www.virtualenv.org/)
-    'virtual_env',
+    #'virtual_env',
 
 # Show the current user's username as in ordinary prompts
-    'username',
+    #'username',
 
 # Show the machine's hostname. Mostly used when ssh-ing into other machines
-    'hostname',
+    #'hostname',
 
 # Show the current directory. If the path is too long, the middle part is
 # replaced with ellipsis ('...')
@@ -24,16 +24,16 @@ SEGMENTS = [
     'git',
 
 # Show the current mercurial branch and status
-    'hg',
+    #'hg',
 
 # Show the current svn branch and status
-    'svn',
+    #'svn',
 
 # Show the current fossil branch and status
-    'fossil',
+    #'fossil',
 
 # Show number of running jobs
-    'jobs',
+    #'jobs',
 
 # Shows a '#' if the current user is root, '$' otherwise
 # Also, changes color if the last command exited with a non-zero error code
