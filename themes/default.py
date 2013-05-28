@@ -5,8 +5,8 @@ class Color:
     HOSTNAME_FG = 250
     HOSTNAME_BG = 00
 
-    PATH_BG = 237  # dark grey
-    PATH_FG = 250  # light grey
+    PATH_BG = 00  # dark grey
+    PATH_FG = 00  # light grey
     CWD_FG = 254  # nearly-white grey
     SEPARATOR_FG = 244
 
@@ -18,7 +18,7 @@ class Color:
     JOBS_FG = 39
     JOBS_BG = 238
 
-    CMD_PASSED_BG = 236
+    CMD_PASSED_BG = 00
     CMD_PASSED_FG = 15
     CMD_FAILED_BG = 161
     CMD_FAILED_FG = 15
