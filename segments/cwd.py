@@ -9,7 +9,7 @@ def get_short_path(cwd):
         path += os.sep + names[i]
         if os.path.samefile(path, home):
             return ['~'] + names[i+1:]
-    return names
+    return names[-powerline.args.cwd_max_depth:]
 
 
 def add_cwd_segment():
